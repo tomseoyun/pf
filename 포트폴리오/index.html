@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+			<title>TOMSTUDIO</title>
+
+				<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+			<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Song+Myung&Amatic+SC&display=swap" rel="stylesheet">
+			<style>
+				@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+				
+				div{ text-align: center; }
+
+				body { margin: 0px; auto; 0px; 0px;
+					background-color: #f4f4f6; }
+
+				h1{
+
+					font-family: 'Amatic SC', cursive;
+				}
+				.exp{
+					font-family: 'Nanum Myeongjo', serif;
+					font-size: 18px;
+					text-align : center;
+				}
+				
+				.char{
+					display: block;
+					margin: 0px auto;
+					width: 200px; height: auto; 
+
+				
+				}
+
+				.nav{
+					width: auto;
+					height: 100px;
+					background-color: #8cbab8;
+				}
+	
+				.list{
+
+					margin-top : 15px;
+				}
+			
+
+
+
+				#logo{
+					width: 250px; 
+					height: auto;
+					 }
+
+				#name{
+					width: 150px;
+		
+				}
+
+				
+
+				
+
+
+
+
+
+
+			</style>
+
+
+	</head>
+
+
+	<body>
+		<header>
+			<script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+		<script>
+		
+	const burst = new mojs.Burst({
+ 	 left: 0, top: 0,
+  	radius:   { 4: 19 },
+  	angle:    45,
+  	children: {
+    shape:        'line',
+    radius:       3,
+    scale:        1,
+    stroke:       '#FD7932',
+    strokeDasharray: '100%',
+    strokeDashoffset: { '-100%' : '100%' },
+    duration:     700,
+    easing:       'quad.out',
+  }
+});
+
+document.addEventListener( 'click', function (e) {
+  burst
+    .tune({ x: e.pageX, y: e.pageY })
+    .replay();
+} );
+
+function hover(element){
+	element.setAttribute('src','logo.png');
+
+}
+
+function unhover(element){
+	element.setAttribute('src','logo_click.png');
+}
+
+	</script>
+</header>
+
+
+<div class="nav">
+	<div class="imgswap">
+				<a href="index.html" >
+			<img src="logo1.png" onmouseover="this.src='logo3.png'" onmouseout="this.src='logo1.png'" id="logo"></a>
+		
+	</div>
+
+	<div class="list">
+	about      works
+	</div>
+
+</div>
+
+
+
+		<img class="char" src="char.png" alt="cat">
+
+
+	<div class='name'>
+		<img src='name.png' id='name'>
+		<h1>  Contents-creating marketer</h1>
+		<p> 이 마케터는 이미지 디자인이 가능합니다 </p>
+		<p> 이 마케터는 영상 편집/모션그래픽이 가능합니다 </p>
+		<p> 이 마케터는 SQL을 통한 데이터 조회,추출이 가능합니다. </p> 
+		<p> 이 마케터는 Python/Pandas를 통한 데이터 분석이 가능합니다.</p>
+		<p> 이 마케터는 html/CSS를 통한 조금할줄 압니다.</p>
+		<p> 이 마케터는 드로잉이 가능합니다. </p>
+		
+	</div>
+
+		<br>
+		<div class="exp">
+		<h1> EXPERIENCE </h1>
+		<p> 2018.04 ~ 2020&nbsp; &nbsp; &nbsp; &nbsp; Neowiz </p>
+		<br>
+		<h1> SKILL </h1>
+		<img src=ae.png width=55px;>
+		<img src=pts.png width=55px;>
+	
+	</div>
+	
+	</body>
+
+</html>
