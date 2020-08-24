@@ -45,26 +45,44 @@
 	
 				.list{
 
-					margin-top : 15px;
+					margin-top : 10px;
 				}
 			
 
 
 
 				#logo{
+					margin-top:1%;
 					width: 250px; 
 					height: auto;
 					 }
 
 				#name{
-					width: 150px;
-		
+					width: 150px;}
 				}
-
 				
+				.graph{
+					width: 100px;
+					height: 40px;
+					background:#ccc;
+					border-radius: 40px;}
 
+				.graph span {
+					display: block; padding: 0 10px;
+					width: 75% height: 40px;
+					line-height: 40px; 
+					text-align: right;
+					background: violet;
+					border-radius: 40px;
+					box-sizing: border-box;
+					color: #fff;
+
+					animation: stack 2s 1; }
 				
-
+				@keyframes stack{
+					0%{ width: 0; color: rgba(255,255,255,0); }
+					100%{ width: 75% color: rgba(255,255,255,1); }
+				}
 
 
 
@@ -124,7 +142,8 @@ function unhover(element){
 	</div>
 
 	<div class="list">
-	about      works
+	about
+	works
 	</div>
 
 </div>
@@ -142,18 +161,25 @@ function unhover(element){
 		<p> 이 마케터는 SQL을 통한 데이터 조회,추출이 가능합니다. </p> 
 		<p> 이 마케터는 Python/Pandas를 통한 데이터 분석이 가능합니다.</p>
 		<p> 이 마케터는 html/CSS를 통한 조금할줄 압니다.</p>
-		<p> 이 마케터는 드로잉이 가능합니다. </p>
-		
+		<p> 이 마케터는 캐릭터 드로잉이 가능합니다. </p>
+
 	</div>
 
-		<br>
+	
 		<div class="exp">
 		<h1> EXPERIENCE </h1>
 		<p> 2018.04 ~ 2020&nbsp; &nbsp; &nbsp; &nbsp; Neowiz </p>
-		<br>
 		<h1> SKILL </h1>
-		<img src=ae.png width=55px;>
+		<div class='graph'>
+			<span> <strong>Advanced</strong></span>
+		</div>
+					<img src=ae.png width=55px;>
 		<img src=pts.png width=55px;>
+		<br>
+		<img src=py.png width=55px;>
+		</br>
+		<h1> LIKE </h1>
+		<img src= lalaland.jpg width=200px;>
 	
 	</div>
 	
